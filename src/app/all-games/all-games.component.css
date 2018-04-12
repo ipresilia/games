@@ -1,0 +1,22 @@
+.img-thumbnail {
+  min-height: 380px;
+}
+
+/* Fits {{ game.image }} inside the parent, img-thumbnail */
+.img-thumbnail img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.img-thumbnail .badge {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.badge {
+  display: inline-block;
+}
+
+.details .game_description {
+  text-align: center;
+}
