@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/@ajusa/lit/dist/lit.css"
+        "../node_modules/@ajusa/lit/dist/lit.css",
+        "../node_modules/@ajusa/lit/dist/util.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

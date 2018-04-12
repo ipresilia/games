@@ -1,11 +1,13 @@
-<div *ngFor="let game of games">
-  <h3>
-    {{ game.name }}
-  </h3>
-  <h4>
-    {{ game.genre }}
-  </h4>
-  <p>
-    {{ game.console }}
-  </p>
+<div class="row">
+  <div *ngFor="let game of games" class="12 col">
+    <h3>
+      {{ game.name }}
+    </h3>
+    <h4>
+      {{ game.genre }}
+    </h4>
+    <p>
+      {{ game.console }}
+    </p>
+  </div>
 </div>
