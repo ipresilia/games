@@ -12,7 +12,6 @@
   },
   "private": true,
   "dependencies": {
-    "@ajusa/lit": "^1.1.0",
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
