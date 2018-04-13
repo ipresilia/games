@@ -1,61 +1,7 @@
 <div class="container">
   <div class="row justify-content-sm-center">
     <div *ngFor="let game of games" class="col-sm-4">
-      <div class="img-thumbnail">
-        <img src="assets/images/{{ game.image }}" alt="">
-          <div class="caption">
-            <div *ngIf="!game.showDetails">
-              <h6>
-                <span class="badge badge-warning">
-                  {{ game.genre }}
-                </span>
-              </h6>
-              <h5>
-                <i class="fas fa-gamepad"></i>
-                {{ game.console }}
-              </h5>
-              <h4>
-                {{ game.name }}
-              </h4>
-
-              <hr>
-
-              <button
-                class="btn btn-sm btn-info btn-block"
-                *ngIf="!game.showDetails"
-                (click)="game.showDetails = !game.showDetails">
-                Details
-              </button>
-
-            </div>
-
-            <div *ngIf="game.showDetails">
-              <div class="details">
-                <h6>
-                  <span>
-                    <i class="fas fa-terminal"></i>
-                    {{ game.developer }}
-                  </span>
-                </h6>
-                <h6>
-                  <span class="badge badge-success">Game opened? {{ game.opened }}</span>
-                  <span class="badge badge-success">Game started? {{ game.started }}</span>
-                  <span class="badge badge-success">Game finished? {{ game.finished }}</span>
-                </h6>
-
-                <p class="game_description">{{ game.description }}</p>
-
-                <hr>
-
-                <button class="btn btn-sm btn-danger btn-block"
-                (click)="game.showDetails = !game.showDetails">
-                Less Details
-                </button>
-              </div>
-            </div>
-
-          </div>
-      </div>
+      <app-game-card [game]="game"></app-game-card>
     </div>
   </div>
 </div>

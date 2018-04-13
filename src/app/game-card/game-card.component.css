@@ -1,0 +1,31 @@
+.img-thumbnail {
+  min-height: 525px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 15px 0;
+}
+
+/* Fits {{ game.image }} inside the parent, img-thumbnail */
+.img-thumbnail img {
+  height: 300px;
+  width: auto;
+  margin: 15px 0;
+}
+
+.img-thumbnail .card-separation {
+  margin-bottom: 5px;
+}
+
+
+.img-thumbnail .badge {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.badge {
+  display: inline-block;
+}
+
+.details .game_description {
+  text-align: center;
+}
